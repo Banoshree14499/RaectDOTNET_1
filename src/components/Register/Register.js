@@ -1,10 +1,14 @@
 
 
 const Register = () => {
+const onSubmit = (data) => {
+    console.log(data);
+    };
+
   return (
     <div>
       <h2>Register</h2>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label htmlFor="username">Username:</label>
           <input type="text" id="username" />

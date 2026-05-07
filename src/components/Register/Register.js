@@ -8,7 +8,7 @@ const onSubmit = (data) => {
   return (
     <div>
       <h2>Register</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
           <input type="text" id="username" />
